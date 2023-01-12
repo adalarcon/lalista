@@ -43,19 +43,19 @@ var concerts = new Vue({
                 <div class="row">
                   <div class="col-auto">
                   <a v-bind:href="item.band_url"  target="new">
-                    <span class="avatar avatar-md" v-bind:style="{ backgroundImage: 'url(' + item.band_image + ')' }"></span>
+                    <span class="avatar" v-bind:style="{ backgroundImage: 'url(' + item.band_image + ')' }"></span>
                   </a>
                   </div>
                   <div class="col">
                     <div class="row">
                       <div class="col">
-                        <h2 class="mb-0"><a v-bind:href="item.band_url"  target="new">{{item.band}} </2></h3>
+                        <h3 class="mb-0"><a v-bind:href="item.band_url"  target="new">{{item.band}} </a></h3>
                       </div>
                       <div class="col-auto fs-3 text-green">
                         {{item.price}}  
                       </div>
                     </div>
-                    <div class="mt-lg-0 list-inline list-inline mb-0 text-muted pt-3 ">
+                    <div class="mt-lg-0 list-inline list-inline mb-0 text-muted pt-0 ">
                       <div class="list-inline-item">
                         <!-- Download SVG icon from http://tabler-icons.io/i/building-community -->
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-inline" width="24" height="24"
